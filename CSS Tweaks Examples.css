@@ -1,0 +1,154 @@
+/* 1) Align icons and images on mobile */
+@media(max-width:599px){
+    .et_pb_blurb_0.et_pb_blurb .et_pb_blurb_content,
+    .et_pb_blurb_1.et_pb_blurb .et_pb_blurb_content,
+    .et_pb_blurb_2.et_pb_blurb .et_pb_blurb_content,
+    .et_pb_blurb_3.et_pb_blurb .et_pb_blurb_content {
+        text-align: center !important;
+    }
+    .page-id-985 .et_pb_row_2 .et_pb_module, .page-id-985 .et_pb_row_4 .et_pb_module, .page-id-1375 .et_pb_row_2 .et_pb_module, .page-id-1375 .et_pb_row_4 .et_pb_module{
+        margin-right: 0px !important;
+    }
+}
+
+/* ////////////////////////////////////////////////////////////////////////// */
+
+/* 2) Testimonials height and color fix */
+
+.thim-testimonial-slider.image-bottom .slides-content .description{
+    color: black !important;
+    height: fit-content !important;
+    margin-bottom: 25px !important;
+}
+
+/* ////////////////////////////////////////////////////////////////////////// */
+
+/* 3) People page grid alignment */
+
+.fusion-portfolio-post{
+    height: 315px !important;
+    margin-bottom: 15px !important;
+}
+
+.fusion-portfolio-five .fusion-portfolio-post img{
+    height: 250px;
+}
+
+/* ////////////////////////////////////////////////////////////////////////// */
+
+/* 4) Links' format in editing area (Admin CSS) */
+
+.block-editor-rich-text__editable a, .wp-block-freeform.block-library-rich-text__tinymce a{
+    color: #32688f !important;
+    text-decoration: underline !important;
+}
+
+/* ////////////////////////////////////////////////////////////////////////// */
+
+/* 5) Login popup custom styling */
+
+#vibe_bp_login, #wplms_custom_registration_form, #wplms_forgot_password_form, .logged-out #vibe_bp_login .fullscreen_login #vbp-login-form, .login_sidebar, #vibe_bp_login #wplms_custom_registration_form, #vibe_bp_login, .loginpopup_wrapper {
+    background: white !important;
+}
+
+.logged-out #vibe_bp_login .fullscreen_login, #vibe_bp_login ul+ul, .login_popup {
+    background: white !important;
+}
+
+.login_popup.medium .login_popup_content .button, .login_popup.elegance .login_popup_content .button {
+    color: black !important;
+}
+
+.login_popup.medium .login_popup_content .button span.vicon+span, .login_popup.elegance .login_popup_content .button span.vicon+span {
+    color: black !important;
+}
+
+/* ////////////////////////////////////////////////////////////////////////// */
+
+/* 6) Make Related Posts Square */
+
+.related-posts .post .post-gallery .wp-post-image {
+    width: 170px !important;
+    height: 170px !important;
+    max-width: 170px !important;
+    max-height: 170px !important;
+    object-fit: cover !important;
+}
+
+/* ////////////////////////////////////////////////////////////////////////// */
+
+/* 7) Desktop and Mobile CSS changes */
+
+@media (min-width: 768px) {
+    .menu-item-123 a{
+        border-radius: 2px !important;
+        font-weight: bold !important;
+        background-color: #d3d3d3 !important;
+    }  
+}
+
+@media (max-width: 767px) {
+    .menu-item-123 a{
+        font-weight: bold !important;
+        color: #000080 !important;
+        background-color: #fff !important;
+    }  
+}
+
+/* ////////////////////////////////////////////////////////////////////////// */
+
+/* 8) Display only for logged in users */
+
+body:not(.logged-in) .menu-item-123 {
+    display: none;
+}
+
+/* ////////////////////////////////////////////////////////////////////////// */
+
+/* 9) Add box-shadow to form on Contact Page */
+
+.elementor-1135 .elementor-element.elementor-element-79a88d4 .elementor-field-group:not(.elementor-field-type-upload) .elementor-field:not(.elementor-select-wrapper){
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* ////////////////////////////////////////////////////////////////////////// */
+
+/* 10) My Account Page Custom CSS */
+
+.page-id-572 {
+    background-color: white;
+    font-family: 'Open Sans' !important;
+}
+
+.page-id-572 a{
+    color: #000080;
+}
+
+.page-id-572 .elementor-25 .elementor-element.elementor-element-bc8ff19 .elementor-button, 
+.page-id-572 .elementor-25 .elementor-element.elementor-element-36f880e .elementor-button {
+    color: #fff;
+}
+
+.page-id-572 .yith-wcmap .user-profile .user-info .logout a {
+    background-color: #000080;
+    transition: .5s;
+}
+
+.page-id-572 .yith-wcmap .user-profile .user-info .logout a:hover {
+    background-color: #1515B7;
+    transition: .5s;
+}
+
+.page-id-572 .yith-wcmap .user-profile .user-avatar.avatar-upload:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: -5px;
+    bottom: -10px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: url(https://example.com/wp-content/plugins/yith-woocommerce-customize-myaccount-page/assets/images/photo.svg) #000080 no-repeat;
+    background-position: 8px 9px;
+    background-size: 18px;
+}
